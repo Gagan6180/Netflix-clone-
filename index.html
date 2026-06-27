@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
@@ -16,8 +17,8 @@
             <span><img width="53px" src="assets/images/logo.svg" alt="img"></span>
 
             <div>
-                <button>English</button>
-                <button>Sign In</button>
+                <button class="btn">English</button>
+                <button class="btn-red-sm">Sign In</button>
             </div>
 
         </nav>
@@ -29,14 +30,72 @@
             <span>Starts at ₹149. Cancel at any time.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
 
-            <div>
+            <div class="hero-buttons">
                 <input type="text" placeholder="Email address">
-                <button>Get started</button>
+                <button class="btn btn-red">Get started &gt;</button>
             </div>
         </div>
 
         <div class="separation"></div>
     </div>
+
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="card">
+                    <span class="rank">1</span>
+                    <img src="https://occ-0-4995-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSSRoenGSKpet9aVhMRDiM4Nxen9ODbVMFTFc3vCs6bPz3HLmduR2sNNUBf3bf8k2MnxVSzBl5YxDLLYTuQFR-0uy5DpEFdVoIQ.webp?r=0b4" alt="Raja shivaji">
+                </div>
+
+                <div class="card">
+                    <span class="rank">2</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV634RJ705XipxQXbUOmWTlPM6NMLGOMgv8O6-1mpxjUiHuGTO8aU_smM_58vn7E3eNAHVvWJq0PdI-Nfb186hH-lCfPKhOAdpg.webp?r=92a">
+                </div>
+
+                <div class="card">
+                    <span class="rank">3</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY63h-h1Gon9p3n_dSWmou2ZyN__EntViMFXWrNen_vEcZGZ7-_P9_z-hxdiUdzgbN83VIT29Y9tL6qEg5MJryhB2k6k1kxsyeFMlH5GvvBIqaqk_qc8LS0XezttgoZGS2hX.webp?r=58c" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">4</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaBljvFdAV1SGGPNXCcLpojtQjNb4MKKevyP-yHCBfzIW1zsZ-8lMn0-MwNMua8X5VZ0yjjzrfAZ4QFqxDdAIcVxsnTAtj2JNIUSZt5IEgJ15eSk4YSmd0XZk0PBW_XNHsbL.webp?r=1c2" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">5</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY_CYX46yPMYNGA4LSbVvD77ejIrQ7vIv5DvlC1-ys_pcz7S36EcshLY7bZ4alWybc9YP9hoP5iqyljC2O9s9Sfue57jQI2jD3U.webp?r=6e3" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">6</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX53OTVB4PHxPJ_KxgZ-ueIbVcG-Q3TonP-SvZpJi1z2NAzj6KCwG8lC0GdNsLXuaAdwGuOkYEhSiSEmr2-zw3jxB_8HU3H8heU.webp?r=a41" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">7</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdu2BTLzDZapIFx3LR83EP5CFJAEcfDaaAhGnIUoz9tEn-xy2K1XjaBe0Wfz0zQB8wWEI17kf-RcCKeqLsV7TsR6oZKZYjqlw34.webp?r=79f" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">8</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV_oJPedN9O1LzeglIVBrs8pKCDK5S1GXPWpKz70PruwgasoAwUBt7BT2bj7O1vIRmypdFe_0tvy5mM2oHT3FmOm9hVkRTPhzv90b_R9855lzsRaV5i-IN8IjaG18Arvvqed.webp?r=6e2" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">9</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYWfklg5D5btQoekHBjGHSFXDW_EezXrT97RnSaEwirkVnCt91QaQlcPWCxtfkSrW04hOcHguRrAMgyKTJzs2_PKkFkbs60DHC4.webp?r=05f" alt="">
+                </div>
+
+                <div class="card">
+                    <span class="rank">10</span>
+                    <img src="https://occ-0-4485-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdCNdKR9dgupDlDI12eOrjd3d1uHJXGw537qUxGjCrEHiyDqJ5OIPTEP107q4e-qLJERuWreYp5bF7t5BxNEI7SfZhIY3p_Sp4w.webp?r=434" alt="">
+                </div>
+            </div>
+            <button class="arrow right">&gt;</button>
+        </div>
+    </section>
 </body>
 
 </html>
