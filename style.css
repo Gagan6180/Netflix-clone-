@@ -1,30 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
 
 }
 
-.main{
+.main {
     background-image: url("assets/images/bg2.jpg");
     background-position: center center;
-    background-size: max(1200px , 100vw);
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     height: 70vh;
     position: relative;
 }
 
-.main .box{
+.main .box {
     height: 70vh;
     width: 100%;
     opacity: 0.69;
@@ -33,7 +32,7 @@ body{
     background-color: black;
 }
 
-nav{
+nav {
     max-width: 60vw;
     margin: auto;
     justify-content: space-between;
@@ -42,20 +41,20 @@ nav{
     height: 62px;
 }
 
-nav img{
+nav img {
     color: red;
     width: 114px;
     position: relative;
     z-index: 10;
 }
 
-nav button{
+nav button {
     position: relative;
     z-index: 10;
 }
 
-.hero{
-    font-family: 'Martel Sans' , sans-serif;
+.hero {
+    font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 62px);
     display: flex;
     align-items: center;
@@ -64,44 +63,44 @@ nav button{
     color: white;
     position: relative;
     gap: 23px;
-    padding:  0 30px;
+    padding: 0 30px;
 }
 
-.hero> :first-child{
-    font-family: 'Poppins' , sans-serif;
+.hero> :first-child {
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 48px;
     text-align: center;
 }
 
-.hero> :nth-child(2){
+.hero> :nth-child(2) {
     font-weight: 400px;
     font-size: 24px;
     text-align: center;
 }
 
-.hero> :nth-child(3){
+.hero> :nth-child(3) {
     font-size: 400px;
     font-size: 20px;
     text-align: center;
 }
 
-.separation{
+.separation {
     height: 7px;
     background-color: rgb(46, 43, 43);
 }
 
-.btn{
+.btn {
     padding: 3px 8px;
-    font-weight:400;
+    font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
     border-radius: 4px;
     border: 1px solid white;
-    cursor : pointer;
+    cursor: pointer;
 }
 
-.btn-red{
+.btn-red {
     background-color: red;
     color: white;
     padding: 3px 24px;
@@ -110,65 +109,138 @@ nav button{
     font-weight: 400;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
 }
 
-.main input{
+.main input {
     padding: 7px 101px 8px 14px;
     font-weight: 900;
     font-size: 12px;
     border-radius: 4px;
-    background-color: rgba(23,23,23,0.7);
-    border: 1px solid rgba(246,238,238,0.5);
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
     color: white;
 }
 
-.btn-red-sm{
+.btn-red-sm {
     background-color: red;
     color: white;
     cursor: pointer;
 }
 
-h2{
-   color: white;
-   margin: 30px;
-   font-family:'Poppins' , sans-serif;
-   font-size: 22px;
-   font-weight: 500;
+h2 {
+    color: white;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
 }
 
-.slider-wrapper{
+.slider-wrapper {
     position: relative;
     overflow: hidden;
+    width: 100vw;
 }
 
-.slider{
+.slider {
     display: flex;
-    gap: 12px;
-    transition: transform 0.5s ease;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.card{
+.card {
     display: flex;
     flex-shrink: 0;
-    width: 160px;
+    cursor: pointer;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 0 calc((100% - (5*20px))/6);
+    position: relative;
+    flex: 0 0 auto;
+    width: 180px;
+    position: relative;
 }
 
-.rank{
+.rank {
     position: absolute;
     bottom: -10px;
-    font-size: 80px;
-    font-weight: 900;
-    color: white;
-    -webkit-text-stroke: 2px black;
+    left: -20px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #000;
+    -webkit-text-stroke: 2px #fff;
+    z-index: 10;
+    line-height: 1;
 }
 
-.arrow rigth{
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.slider-btn {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2 ease;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 2.5rem;
+}
+
+.slider-btn:hover .slider-btn {
+    opacity: 1;
+}
+
+.leftbutton {
+    left: 0;
+}
+
+.rightbutton {
     right: 0;
-    top: 50%;
+}
+
+.more h2 {
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.slider ::-webkit-scrollbar {
+    display: none;
+}
+
+.slider {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.more-reasons h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 27px;
 }

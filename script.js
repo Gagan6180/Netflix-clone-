@@ -1,8 +1,11 @@
-let index = 0;
-const slider = document.querySelector('.slider');
-const cardWidth = 172; // card width + gap
+const slider = document.getElementById('movingSlider');
+const leftbutton = document.querySelector('.leftbutton');
+const rigthbutton = document.querySelector('.rigthbutton');
 
-document.querySelector('.arrow.right').addEventListener('click', () => {
-  index++;
-  slider.style.transform = `translateX(-${index * cardWidth}px)`;
+leftbutton.addEventListener('click',() => {
+  slider.scrollBy({left: -300 , behavior: 'smooth'});
+});
+
+rigthbutton.addEventListener('click',() => {
+  slider.scrollBy({left: 300 , behavior: 'smooth'});
 });
